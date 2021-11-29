@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+}
+
+/* Centratura */
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+/* Stile header */
+header {
+    height: 10rem;
+    background-color: #E579E6;
+    margin-top: 1.5rem;
+}
+
+/* Stile prima sezione della pagina */
+.banner {
+    height: 25rem;
+    background-color: #E1D67A;
+    margin: 1.5rem 0;
+}
+
+/* Stile seconda sezione della pagina */
+.content {
+    height: 35rem;
+    background-color: #008CFE;
+    margin-bottom: 0.5rem;
+}
+
+/* Seconda sezione della pagina - parte in alto */
+.content .top {
+    height: 10%;
+    background-color: #ABCFE7;
+}
+
+/* Seconda sezione della pagina - parte in basso principale */
+.content .bottom {
+    height: calc(90% - 2rem);
+    margin: 1rem 0;
+}
+
+.content .bottom .left, .content .bottom .right {
+    height: 100%;
+    width: 25%;
+    background-color: #ABCFE7;
+    float:left
+}
+
+.content .bottom .center {
+    height: 100%;
+    width: calc(50% - 2rem);
+    background-color: #ABCFE7;
+    float:left;
+    margin: 0 1rem;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Stile del footer */
+footer {
+    height: 3rem;
+    background-color: #8801FE;
+}
