@@ -1,6 +1,22 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.overlay{
+    border-radius: 20px;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0,0,0,0.2);
+  }
 
 /* Centratura */
 .wrapper {
@@ -10,29 +26,86 @@ body {
 
 /* Stile header */
 header {
-    height: 10rem;
-    background-color: #E579E6;
-    margin-top: 1.5rem;
+    margin: 20px 0;
+}
+
+header .logo {
+    height: 100px;
+    padding-right: 25px;
+    border-right: 1px solid lightgray;
+}
+
+/* Stile barra navigazione */
+
+nav ul li {
+    display: inline;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 1.5rem;
+    padding: 2px 5px;
+}
+
+nav ul li a:hover {
+    color: white;
+    cursor:pointer;
+    background-color: black;
 }
 
 /* Stile prima sezione della pagina */
+
 .banner {
-    height: 25rem;
-    background-color: #E1D67A;
-    margin: 1.5rem 0;
+    margin: 20px 0;
+    position: relative;
+    border-radius: 20px;
+    font-size:0;
+}
+
+.banner img {
+    border-radius: 20px;
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner .title{
+    max-width: 50%;
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    color: white;
+}
+
+.banner .title h1{
+    font-size: 3rem;
+    font-weight: normal;
+}
+.banner .title p{
+    font-size: 1.2rem;
 }
 
 /* Stile seconda sezione della pagina */
 .content {
     height: 35rem;
-    background-color: #008CFE;
     margin-bottom: 0.5rem;
 }
 
 /* Seconda sezione della pagina - parte in alto */
 .content .top {
-    height: 10%;
-    background-color: #ABCFE7;
+}
+
+.content .top h1{
+    font-size: 3rem;
+}
+
+.content .top span{
+    color:gray;
+    font-size: 1.2rem;
 }
 
 /* Seconda sezione della pagina - parte in basso principale */
